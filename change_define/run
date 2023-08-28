@@ -1,0 +1,8 @@
+perl change_define.pl top_bench.sv SYSTEM_test111
+perl change_define.pl top_bench.sv SYSTEM_test112
+perl change_define.pl top_bench.sv SYSTEM_test103
+perl change_define.pl top_bench.sv SYSTEM_test104
+perl change_define.pl top_bench.sv SYSTEM_test113
+perl change_define.pl top_bench.sv SYSTEM_test114
+
+
