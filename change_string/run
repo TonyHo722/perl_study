@@ -1,0 +1,1 @@
+echo "open_wave_database caravel_asic.wdb" | perl -pe "s/open_wave_database \w+/$USER/"
