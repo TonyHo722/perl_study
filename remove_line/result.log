@@ -1,0 +1,419 @@
+/SSD2T/debug/d4_caravel_user_project/log-no-cd-no-export-SIM not exist, create it
+commit bae93e078005210307b7530e53d4a0c060ed5c54
+Author: Jeff DiCorpo <42048757+jeffdi@users.noreply.github.com>
+Date:   Fri Nov 25 11:53:53 2022 -0800
+
+    tag = mpw-8c
+mkdir: cannot create directory ‘dependencies’: File exists
+if [ -d "/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel" ]; then\
+	echo "Deleting exisiting /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel" && \
+	rm -rf /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel && sleep 2;\
+fi
+Deleting exisiting /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel
+echo "Installing caravel-lite.."
+Installing caravel-lite..
+git clone -b mpw-8c https://github.com/efabless/caravel-lite /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel --depth=1
+Cloning into '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel'...
+Note: switching to '1e3103fd5ffa56f72e2b38e804c9c7bb2738e32a'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+export CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel && make -f /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/Makefile check-env
+make[1]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project'
+make[1]: Nothing to be done for 'check-env'.
+make[1]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project'
+export CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel && make -f /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/Makefile install_mcw
+make[1]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project'
+if [ -d "/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper" ]; then \
+	echo "Deleting exisiting /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper" && \
+	rm -rf /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper && sleep 2;\
+fi
+Deleting exisiting /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper
+Installing mcw-litex-vexriscv..
+Cloning into '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper'...
+Note: switching to '453e4cca7d165db005492cd1a93a3a8aed710e2b'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+Updating files:  13% (111/794)Updating files:  14% (112/794)Updating files:  15% (120/794)Updating files:  16% (128/794)Updating files:  17% (135/794)Updating files:  18% (143/794)Updating files:  19% (151/794)Updating files:  20% (159/794)Updating files:  21% (167/794)Updating files:  22% (175/794)Updating files:  23% (183/794)Updating files:  24% (191/794)Updating files:  25% (199/794)Updating files:  26% (207/794)Updating files:  26% (210/794)Updating files:  27% (215/794)Updating files:  27% (219/794)Updating files:  28% (223/794)Updating files:  29% (231/794)Updating files:  29% (237/794)Updating files:  30% (239/794)Updating files:  30% (244/794)Updating files:  31% (247/794)Updating files:  31% (250/794)Updating files:  32% (255/794)Updating files:  32% (261/794)Updating files:  33% (263/794)Updating files:  34% (270/794)Updating files:  35% (278/794)Updating files:  36% (286/794)Updating files:  37% (294/794)Updating files:  38% (302/794)Updating files:  39% (310/794)Updating files:  39% (311/794)Updating files:  40% (318/794)Updating files:  40% (320/794)Updating files:  41% (326/794)Updating files:  42% (334/794)Updating files:  43% (342/794)Updating files:  44% (350/794)Updating files:  44% (354/794)Updating files:  45% (358/794)Updating files:  45% (361/794)Updating files:  46% (366/794)Updating files:  46% (373/794)Updating files:  47% (374/794)Updating files:  48% (382/794)Updating files:  48% (384/794)Updating files:  49% (390/794)Updating files:  49% (391/794)Updating files:  50% (397/794)Updating files:  50% (402/794)Updating files:  51% (405/794)Updating files:  51% (410/794)Updating files:  52% (413/794)Updating files:  53% (421/794)Updating files:  54% (429/794)Updating files:  55% (437/794)Updating files:  56% (445/794)Updating files:  57% (453/794)Updating files:  57% (456/794)Updating files:  58% (461/794)Updating files:  59% (469/794)Updating files:  60% (477/794)Updating files:  61% (485/794)Updating files:  62% (493/794)Updating files:  63% (501/794)Updating files:  64% (509/794)Updating files:  65% (517/794)Updating files:  65% (521/794)Updating files:  66% (525/794)Updating files:  66% (527/794)Updating files:  67% (532/794)Updating files:  68% (540/794)Updating files:  69% (548/794)Updating files:  70% (556/794)Updating files:  71% (564/794)Updating files:  72% (572/794)Updating files:  73% (580/794)Updating files:  74% (588/794)Updating files:  75% (596/794)Updating files:  76% (604/794)Updating files:  77% (612/794)Updating files:  78% (620/794)Updating files:  79% (628/794)Updating files:  80% (636/794)Updating files:  81% (644/794)Updating files:  82% (652/794)Updating files:  83% (660/794)Updating files:  84% (667/794)Updating files:  85% (675/794)Updating files:  86% (683/794)Updating files:  87% (691/794)Updating files:  88% (699/794)Updating files:  89% (707/794)Updating files:  90% (715/794)Updating files:  91% (723/794)Updating files:  92% (731/794)Updating files:  93% (739/794)Updating files:  94% (747/794)Updating files:  95% (755/794)Updating files:  96% (763/794)Updating files:  97% (771/794)Updating files:  98% (779/794)Updating files:  99% (787/794)Updating files: 100% (794/794)Updating files: 100% (794/794), done.
+make[1]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project'
+cd openlane && make openlane
+make[1]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane'
+if [ -d "/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src" ]; then\
+	echo "Deleting exisiting /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src" && \
+	rm -rf /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src && sleep 2; \
+	fi
+Deleting exisiting /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src
+git clone https://github.com/The-OpenROAD-Project/OpenLane -b 2022.11.19 --depth=1 /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src && \
+	cd /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src && \
+	export OPENLANE_IMAGE_NAME=efabless/openlane:2022.11.19 && \
+	export IMAGE_NAME=efabless/openlane:2022.11.19 && \
+	make pull-openlane
+Cloning into '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src'...
+Note: switching to 'cb59d1f84deb5cedbb5b0a3e3f3b4129a967c988'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+make[2]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src'
+Makefile:23: warning: undefined variable 'DOCKER_SWAP'
+Makefile:26: warning: undefined variable 'DOCKER_MEMORY'
+Makefile:42: warning: undefined variable 'ROUTING_CORES'
+Makefile:69: warning: undefined variable 'STD_CELL_LIBRARY'
+2022.11.19: Pulling from efabless/openlane
+Digest: sha256:658754c4b314437f770c0920ec354267317a86bebbf628b7a4b6b8cac95d3cac
+Status: Image is up to date for efabless/openlane:2022.11.19
+docker.io/efabless/openlane:2022.11.19
+make[2]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src'
+make[1]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane'
+export CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel && make -f /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/Makefile pdk-with-volare
+make[1]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project'
+python3 -m pip install --upgrade volare
+Requirement already satisfied: volare in /home/tonyho/miniconda3/lib/python3.9/site-packages (0.12.3)
+Requirement already satisfied: click<9,>=8.0.0 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from volare) (8.1.3)
+Requirement already satisfied: requests<3,>=2.27.0 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from volare) (2.28.2)
+Requirement already satisfied: pcpp<2,>=1.2 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from volare) (1.30)
+Requirement already satisfied: pyyaml<7,>=5 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from volare) (6.0)
+Requirement already satisfied: rich<13,>=12 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from volare) (12.6.0)
+Requirement already satisfied: zstandard<1,>=0.19.0 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from volare) (0.21.0)
+Requirement already satisfied: certifi>=2017.4.17 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from requests<3,>=2.27.0->volare) (2021.5.30)
+Requirement already satisfied: idna<4,>=2.5 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from requests<3,>=2.27.0->volare) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from requests<3,>=2.27.0->volare) (1.26.6)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from requests<3,>=2.27.0->volare) (3.0.1)
+Requirement already satisfied: pygments<3.0.0,>=2.6.0 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from rich<13,>=12->volare) (2.14.0)
+Requirement already satisfied: commonmark<0.10.0,>=0.9.0 in /home/tonyho/miniconda3/lib/python3.9/site-packages (from rich<13,>=12->volare) (0.9.1)
+Version 0059588eebfc704681dc2368bd1d33d96281d10f enabled for the sky130 PDK.
+make[1]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project'
+Already up to date.
+. ./venv/bin/activate && \
+	python3 -m pip install --upgrade pip && \
+	python3 -m pip install -r /SSD2T/debug/d4_caravel_user_project/caravel_user_project/deps/timing-scripts/requirements.txt && \
+	deactivate
+Requirement already satisfied: pip in ./venv/lib/python3.9/site-packages (23.2.1)
+Requirement already satisfied: click in ./venv/lib/python3.9/site-packages (from -r /SSD2T/debug/d4_caravel_user_project/caravel_user_project/deps/timing-scripts/requirements.txt (line 1)) (8.1.7)
+docker pull efabless/dv:latest
+latest: Pulling from efabless/dv
+Digest: sha256:06497b070c8578fbbe87170c9f4dfa61c2c9a9d9f665a637c4d822ea98a7f1b7
+Status: Image is up to date for efabless/dv:latest
+docker.io/efabless/dv:latest
+docker pull efabless/dv:latest
+latest: Pulling from efabless/dv
+Digest: sha256:06497b070c8578fbbe87170c9f4dfa61c2c9a9d9f665a637c4d822ea98a7f1b7
+Status: Image is up to date for efabless/dv:latest
+docker.io/efabless/dv:latest
+docker run -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project:/SSD2T/debug/d4_caravel_user_project/caravel_user_project -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -e TARGET_PATH=/SSD2T/debug/d4_caravel_user_project/caravel_user_project -e PDK_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -e CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -e TOOLS=/foss/tools/riscv-gnu-toolchain-rv32i/217e7f3debe424d61374d31e33a091a630535937 -e DESIGNS=/SSD2T/debug/d4_caravel_user_project/caravel_user_project -e USER_PROJECT_VERILOG=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/verilog -e PDK=sky130A -e CORE_VERILOG_PATH=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog -e CARAVEL_VERILOG_PATH=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/verilog -e MCW_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper -u $(id -u $USER):$(id -g $USER) efabless/dv:latest sh -c "source ~/.bashrc && cd /SSD2T/debug/d4_caravel_user_project/caravel_user_project/verilog/dv/la_test1 && export SIM=RTL && make"
+/foss/tools/riscv-gnu-toolchain-rv32i/217e7f3debe424d61374d31e33a091a630535937/bin/riscv32-unknown-linux-gnu-gcc -g \
+-I/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/dv/firmware \
+-I/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/dv/generated \
+-I/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/dv/ \
+-I/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/common \
+  -march=rv32i      -mabi=ilp32 -D__vexriscv__ \
+-Wl,-Bstatic,-T,/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/dv/firmware/sections.lds,--strip-debug \
+-ffreestanding -nostdlib -o la_test1.elf /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/dv/firmware/crt0_vex.S /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/dv/firmware/isr.c la_test1.c
+/foss/tools/riscv-gnu-toolchain-rv32i/217e7f3debe424d61374d31e33a091a630535937/bin/riscv32-unknown-linux-gnu-objcopy -O verilog la_test1.elf la_test1.hex 
+# to fix flash base address
+sed -ie 's/@10/@00/g' la_test1.hex
+iverilog -Ttyp -DFUNCTIONAL -DSIM -DUSE_POWER_PINS -DUNIT_DELAY=#1 \
+        -f/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/includes/includes.rtl.caravel \
+        -f/SSD2T/debug/d4_caravel_user_project/caravel_user_project/verilog/includes/includes.rtl.caravel_user_project -o la_test1.vvp la_test1_tb.v
+/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/verilog/rtl/caravel.v:363: warning: input port clock is coerced to inout.
+vvp  la_test1.vvp
+Reading la_test1.hex
+la_test1.hex loaded into memory
+Memory 5 bytes = 0x6f 0x00 0x00 0x0b 0x13
+FST info: dumpfile la_test1.vcd opened for output.
+LA Test seq_gcd(10312050, 29460792)=138 started
+LA Test seq_gcd(10312050, 29460792)=138 passed
+LA Test seq_gcd(1993627629, 1177417612)=7 started
+LA Test seq_gcd(1993627629, 1177417612)=7 passed
+LA Test seq_gcd(2097015289, 3812041926)=1 started
+LA Test seq_gcd(2097015289, 3812041926)=1 passed
+LA Test seq_gcd(1924134885, 3151131255)=135 started
+LA Test seq_gcd(1924134885, 3151131255)=135 passed
+LA Test seq_gcd(992211318, 512609597)=1 started
+LA Test seq_gcd(992211318, 512609597)=1 passed
+la_test1_tb.v:189: $finish called at 2569612500 (1ps)
+mv la_test1.vcd RTL-la_test1.vcd
+/foss/tools/riscv-gnu-toolchain-rv32i/217e7f3debe424d61374d31e33a091a630535937/bin/riscv32-unknown-linux-gnu-objdump -d -S la_test1.elf > la_test1.lst
+rm la_test1.elf la_test1.vvp
+make -C openlane user_proj_example
+make[1]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane'
+# user_proj_example
+mkdir -p ./user_proj_example/runs/23_09_02_20_23 
+rm -rf ./user_proj_example/runs/user_proj_example
+ln -s $(realpath ./user_proj_example/runs/23_09_02_20_23) ./user_proj_example/runs/user_proj_example
+docker run -it -v $(realpath /SSD2T/debug/d4_caravel_user_project/caravel_user_project/..):$(realpath /SSD2T/debug/d4_caravel_user_project/caravel_user_project/..) -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src:/openlane -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper -e PDK_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -e PDK=sky130A -e MISMATCHES_OK=1 -e CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -e OPENLANE_RUN_TAG=23_09_02_20_23 -e MCW_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper -u 1000:1000 \
+	efabless/openlane:2022.11.19 sh -c "flow.tcl -design $(realpath ./user_proj_example) -save_path $(realpath ..) -save -tag 23_09_02_20_23 -overwrite -ignore_mismatches"
+OpenLane cb59d1f84deb5cedbb5b0a3e3f3b4129a967c988
+All rights reserved. (c) 2020-2022 Efabless Corporation and contributors.
+Available under the Apache License, version 2.0. See the LICENSE file for more details.
+
+[33m[WARNING]: OpenLane may not function properly: The version of open_pdks used in building the PDK does not match the version OpenLane was tested on (installed: 0059588eebfc704681dc2368bd1d33d96281d10f, tested: 3af133706e554a740cfe60f21e773d9eaa41838c)
+This may introduce some issues. You may want to re-install the PDK by invoking `make pdk`.[39m
+[36m[INFO]: Using configuration in '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/config.json'...[39m
+[36m[INFO]: PDK Root: /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks[39m
+[36m[INFO]: Process Design Kit: sky130A[39m
+[36m[INFO]: Standard Cell Library: sky130_fd_sc_hd[39m
+[36m[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd[39m
+[36m[INFO]: Run Directory: /SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23[39m
+[36m[INFO]: Preparing LEF files for the nom corner...[39m
+[36m[INFO]: Preparing LEF files for the min corner...[39m
+[36m[INFO]: Preparing LEF files for the max corner...[39m
+[STEP 1]
+[36m[INFO]: Running Synthesis (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/synthesis/1-synthesis.log)...[39m
+[STEP 2]
+[36m[INFO]: Running Single-Corner Static Timing Analysis (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/synthesis/2-sta.log)...[39m
+[STEP 3]
+[36m[INFO]: Running Initial Floorplanning (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/floorplan/3-initial_fp.log)...[39m
+[36m[INFO]: Floorplanned with width 888.72 and height 576.64.[39m
+[STEP 4]
+[36m[INFO]: Running IO Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/floorplan/4-place_io.log)...[39m
+[STEP 5]
+[36m[INFO]: Running Tap/Decap Insertion (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/floorplan/5-tap.log)...[39m
+[36m[INFO]: Power planning with power {vccd1} and ground {vssd1}...[39m
+[STEP 6]
+[36m[INFO]: Generating PDN (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/floorplan/6-pdn.log)...[39m
+[STEP 7]
+[36m[INFO]: Running Global Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/placement/7-global.log)...[39m
+[STEP 8]
+[36m[INFO]: Running Placement Resizer Design Optimizations (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/placement/8-resizer.log)...[39m
+[STEP 9]
+[36m[INFO]: Running Detailed Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/placement/9-detailed.log)...[39m
+[STEP 10]
+[36m[INFO]: Running Clock Tree Synthesis (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/cts/10-cts.log)...[39m
+[STEP 11]
+[36m[INFO]: Running Placement Resizer Timing Optimizations (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/cts/11-resizer.log)...[39m
+[STEP 12]
+[36m[INFO]: Running Global Routing Resizer Timing Optimizations (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/12-resizer.log)...[39m
+[STEP 13]
+[36m[INFO]: Running Diode Insertion (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/13-diodes.log)...[39m
+[STEP 14]
+[36m[INFO]: Running Detailed Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/14-diode_legalization.log)...[39m
+[STEP 15]
+[36m[INFO]: Running Fill Insertion (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/15-fill.log)...[39m
+[STEP 16]
+[36m[INFO]: Running Global Routing (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/16-global.log)...[39m
+[STEP 17]
+[36m[INFO]: Writing Verilog (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/16-global_write_netlist.log)...[39m
+[STEP 18]
+[36m[INFO]: Running Detailed Routing (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/18-detailed.log)...[39m
+[36m[INFO]: No DRC violations after detailed routing.[39m
+[STEP 19]
+[36m[INFO]: Checking Wire Lengths (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/routing/19-wire_lengths.log)...[39m
+[STEP 20]
+[36m[INFO]: Running SPEF Extraction at the min process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/20-parasitics_extraction.min.log)...[39m
+[STEP 21]
+[36m[INFO]: Running Multi-Corner Static Timing Analysis at the min process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/21-rcx_mcsta.min.log)...[39m
+[STEP 22]
+[36m[INFO]: Running SPEF Extraction at the max process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/22-parasitics_extraction.max.log)...[39m
+[STEP 23]
+[36m[INFO]: Running Multi-Corner Static Timing Analysis at the max process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/23-rcx_mcsta.max.log)...[39m
+[STEP 24]
+[36m[INFO]: Running SPEF Extraction at the nom process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/24-parasitics_extraction.nom.log)...[39m
+[STEP 25]
+[36m[INFO]: Running Multi-Corner Static Timing Analysis at the nom process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/25-rcx_mcsta.nom.log)...[39m
+[STEP 26]
+[36m[INFO]: Running Single-Corner Static Timing Analysis at the nom process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/26-rcx_sta.log)...[39m
+[STEP 27]
+[36m[INFO]: Creating IR Drop Report (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/27-irdrop.log)...[39m
+[STEP 28]
+[36m[INFO]: Running Magic to generate various views...[39m
+[36m[INFO]: Streaming out GDSII with Magic (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/28-gdsii.log)...[39m
+[36m[INFO]: Generating MAGLEF views...[39m
+[STEP 29]
+[36m[INFO]: Streaming out GDSII with KLayout (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/29-gdsii-klayout.log)...[39m
+[STEP 30]
+[36m[INFO]: Running XOR on the layouts using KLayout (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/30-xor.log)...[39m
+[STEP 31]
+[36m[INFO]: Running Magic Spice Export from LEF (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/31-spice.log)...[39m
+[STEP 32]
+[36m[INFO]: Writing Powered Verilog (logs: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/32-write_powered_def.log, ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/32-write_powered_verilog.log)...[39m
+[STEP 33]
+[36m[INFO]: Writing Verilog (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/32-write_powered_verilog.log)...[39m
+[STEP 34]
+[36m[INFO]: Running LVS (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/34-lvs.lef.log)...[39m
+[STEP 35]
+[36m[INFO]: Running Magic DRC (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/35-drc.log)...[39m
+[36m[INFO]: Converting Magic DRC database to various tool-readable formats...[39m
+[36m[INFO]: No DRC violations after GDS streaming out.[39m
+[STEP 36]
+[36m[INFO]: Running OpenROAD Antenna Rule Checker (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/logs/signoff/36-antenna.log)...[39m
+[36m[INFO]: Saving current set of views in '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/results/final'...[39m
+[36m[INFO]: Saving current set of views in '../SSD2T/debug/d4_caravel_user_project/caravel_user_project'...[39m
+[36m[INFO]: Saving runtime environment...[39m
+[36m[INFO]: Generating final set of reports...[39m
+[36m[INFO]: Created manufacturability report at '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/manufacturability.rpt'.[39m
+[36m[INFO]: Created metrics report at '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/metrics.csv'.[39m
+[33m[WARNING]: There are max slew violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/signoff/26-rcx_sta.slew.rpt'.[39m
+[33m[WARNING]: There are max fanout violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/signoff/26-rcx_sta.slew.rpt'.[39m
+[33m[WARNING]: There are max capacitance violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/signoff/26-rcx_sta.slew.rpt'.[39m
+[36m[INFO]: There are no hold violations in the design at the typical corner.[39m
+[36m[INFO]: There are no setup violations in the design at the typical corner.[39m
+[32m[SUCCESS]: Flow complete.[39m
+[36m[INFO]: Note that the following warnings have been generated:[39m
+[WARNING]: There are max slew violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/signoff/26-rcx_sta.slew.rpt'.
+[WARNING]: There are max fanout violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/signoff/26-rcx_sta.slew.rpt'.
+[WARNING]: There are max capacitance violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_proj_example/runs/23_09_02_20_23/reports/signoff/26-rcx_sta.slew.rpt'.
+
+make[1]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane'
+make -C openlane user_project_wrapper
+make[1]: Entering directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane'
+# user_project_wrapper
+mkdir -p ./user_project_wrapper/runs/23_09_02_20_43 
+rm -rf ./user_project_wrapper/runs/user_project_wrapper
+ln -s $(realpath ./user_project_wrapper/runs/23_09_02_20_43) ./user_project_wrapper/runs/user_project_wrapper
+docker run -it -v $(realpath /SSD2T/debug/d4_caravel_user_project/caravel_user_project/..):$(realpath /SSD2T/debug/d4_caravel_user_project/caravel_user_project/..) -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/openlane_src:/openlane -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper -e PDK_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -e PDK=sky130A -e MISMATCHES_OK=1 -e CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -e OPENLANE_RUN_TAG=23_09_02_20_43 -e MCW_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper -u 1000:1000 \
+	efabless/openlane:2022.11.19 sh -c "flow.tcl -design $(realpath ./user_project_wrapper) -save_path $(realpath ..) -save -tag 23_09_02_20_43 -overwrite -ignore_mismatches"
+OpenLane cb59d1f84deb5cedbb5b0a3e3f3b4129a967c988
+All rights reserved. (c) 2020-2022 Efabless Corporation and contributors.
+Available under the Apache License, version 2.0. See the LICENSE file for more details.
+
+[33m[WARNING]: OpenLane may not function properly: The version of open_pdks used in building the PDK does not match the version OpenLane was tested on (installed: 0059588eebfc704681dc2368bd1d33d96281d10f, tested: 3af133706e554a740cfe60f21e773d9eaa41838c)
+This may introduce some issues. You may want to re-install the PDK by invoking `make pdk`.[39m
+[36m[INFO]: Using configuration in '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/config.json'...[39m
+[36m[INFO]: PDK Root: /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks[39m
+[36m[INFO]: Process Design Kit: sky130A[39m
+[36m[INFO]: Standard Cell Library: sky130_fd_sc_hd[39m
+[36m[INFO]: Optimization Standard Cell Library: sky130_fd_sc_hd[39m
+[36m[INFO]: Run Directory: /SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43[39m
+[36m[INFO]: Preparing LEF files for the nom corner...[39m
+[36m[INFO]: Preparing LEF files for the min corner...[39m
+[36m[INFO]: Preparing LEF files for the max corner...[39m
+[STEP 1]
+[36m[INFO]: Running Synthesis (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/synthesis/1-synthesis.log)...[39m
+[STEP 2]
+[36m[INFO]: Running Single-Corner Static Timing Analysis (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/synthesis/2-sta.log)...[39m
+[36m[INFO]: Creating a netlist with power/ground pins.[39m
+[STEP 3]
+[36m[INFO]: Running Initial Floorplanning (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/floorplan/3-initial_fp.log)...[39m
+[36m[INFO]: Floorplanned with width 2908.58 and height 3497.92.[39m
+[STEP 4]
+[36m[INFO]: Running IO Placement...[39m
+[36m[INFO]: Applying DEF template...[39m
+[STEP 5]
+[36m[INFO]: Performing Manual Macro Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/placement/5-macro_placement.log)...[39m
+[36m[INFO]: Power planning with power {vccd1 vccd2 vdda1 vdda2} and ground {vssd1 vssd2 vssa1 vssa2}...[39m
+[STEP 6]
+[36m[INFO]: Generating PDN (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/floorplan/6-pdn.log)...[39m
+[STEP 7]
+[36m[INFO]: Performing Random Global Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/placement/7-global.log)...[39m
+[36m[INFO]: Skipping Placement Resizer Design Optimizations.[39m
+[STEP 8]
+[36m[INFO]: Running Detailed Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/placement/8-detailed.log)...[39m
+[36m[INFO]: Skipping Placement Resizer Timing Optimizations.[39m
+[STEP 9]
+[36m[INFO]: Running Global Routing Resizer Timing Optimizations (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/routing/9-resizer.log)...[39m
+[STEP 10]
+[36m[INFO]: Running Detailed Placement (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/routing/10-diode_legalization.log)...[39m
+[STEP 11]
+[36m[INFO]: Running Global Routing (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/routing/11-global.log)...[39m
+[STEP 12]
+[36m[INFO]: Writing Verilog (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/routing/11-global_write_netlist.log)...[39m
+[STEP 13]
+[36m[INFO]: Running Detailed Routing (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/routing/13-detailed.log)...[39m
+[36m[INFO]: No DRC violations after detailed routing.[39m
+[STEP 14]
+[36m[INFO]: Checking Wire Lengths (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/routing/14-wire_lengths.log)...[39m
+[STEP 15]
+[36m[INFO]: Running SPEF Extraction at the min process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/15-parasitics_extraction.min.log)...[39m
+[STEP 16]
+[36m[INFO]: Running Multi-Corner Static Timing Analysis at the min process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/16-rcx_mcsta.min.log)...[39m
+[STEP 17]
+[36m[INFO]: Running SPEF Extraction at the max process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/17-parasitics_extraction.max.log)...[39m
+[STEP 18]
+[36m[INFO]: Running Multi-Corner Static Timing Analysis at the max process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/18-rcx_mcsta.max.log)...[39m
+[STEP 19]
+[36m[INFO]: Running SPEF Extraction at the nom process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/19-parasitics_extraction.nom.log)...[39m
+[STEP 20]
+[36m[INFO]: Running Multi-Corner Static Timing Analysis at the nom process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/20-rcx_mcsta.nom.log)...[39m
+[STEP 21]
+[36m[INFO]: Running Single-Corner Static Timing Analysis at the nom process corner (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/21-rcx_sta.log)...[39m
+[STEP 22]
+[36m[INFO]: Creating IR Drop Report (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/22-irdrop.log)...[39m
+[STEP 23]
+[36m[INFO]: Running Magic to generate various views...[39m
+[36m[INFO]: Streaming out GDSII with Magic (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/23-gdsii.log)...[39m
+[36m[INFO]: Generating MAGLEF views...[39m
+[STEP 24]
+[36m[INFO]: Streaming out GDSII with KLayout (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/24-gdsii-klayout.log)...[39m
+[STEP 25]
+[36m[INFO]: Running XOR on the layouts using KLayout (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/25-xor.log)...[39m
+[STEP 26]
+[36m[INFO]: Running Magic Spice Export from LEF (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/26-spice.log)...[39m
+[STEP 27]
+[36m[INFO]: Writing Powered Verilog (logs: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/27-write_powered_def.log, ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/27-write_powered_verilog.log)...[39m
+[STEP 28]
+[36m[INFO]: Writing Verilog (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/27-write_powered_verilog.log)...[39m
+[STEP 29]
+[36m[INFO]: Running LVS (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/29-lvs.lef.log)...[39m
+[STEP 30]
+[36m[INFO]: Running Magic DRC (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/30-drc.log)...[39m
+[36m[INFO]: Converting Magic DRC database to various tool-readable formats...[39m
+[36m[INFO]: No DRC violations after GDS streaming out.[39m
+[STEP 31]
+[36m[INFO]: Running OpenROAD Antenna Rule Checker (log: ../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/logs/signoff/31-antenna.log)...[39m
+[36m[INFO]: Saving current set of views in '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/results/final'...[39m
+[36m[INFO]: Saving current set of views in '../SSD2T/debug/d4_caravel_user_project/caravel_user_project'...[39m
+[36m[INFO]: Saving runtime environment...[39m
+[36m[INFO]: Generating final set of reports...[39m
+[36m[INFO]: Created manufacturability report at '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/reports/manufacturability.rpt'.[39m
+[36m[INFO]: Created metrics report at '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/reports/metrics.csv'.[39m
+[33m[WARNING]: There are max slew violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/reports/signoff/21-rcx_sta.slew.rpt'.[39m
+[33m[WARNING]: There are max capacitance violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/reports/signoff/21-rcx_sta.slew.rpt'.[39m
+[36m[INFO]: There are no hold violations in the design at the typical corner.[39m
+[36m[INFO]: There are no setup violations in the design at the typical corner.[39m
+[32m[SUCCESS]: Flow complete.[39m
+[36m[INFO]: Note that the following warnings have been generated:[39m
+[WARNING]: There are max slew violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/reports/signoff/21-rcx_sta.slew.rpt'.
+[WARNING]: There are max capacitance violations in the design at the typical corner. Please refer to '../SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane/user_project_wrapper/runs/23_09_02_20_43/reports/signoff/21-rcx_sta.slew.rpt'.
+
+make[1]: Leaving directory '/SSD2T/debug/d4_caravel_user_project/caravel_user_project/openlane'
+docker pull efabless/dv:latest
+latest: Pulling from efabless/dv
+Digest: sha256:06497b070c8578fbbe87170c9f4dfa61c2c9a9d9f665a637c4d822ea98a7f1b7
+Status: Image is up to date for efabless/dv:latest
+docker.io/efabless/dv:latest
+docker run -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project:/SSD2T/debug/d4_caravel_user_project/caravel_user_project -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -v /SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel:/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -e TARGET_PATH=/SSD2T/debug/d4_caravel_user_project/caravel_user_project -e PDK_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/dependencies/pdks -e CARAVEL_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel -e TOOLS=/foss/tools/riscv-gnu-toolchain-rv32i/217e7f3debe424d61374d31e33a091a630535937 -e DESIGNS=/SSD2T/debug/d4_caravel_user_project/caravel_user_project -e USER_PROJECT_VERILOG=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/verilog -e PDK=sky130A -e CORE_VERILOG_PATH=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog -e CARAVEL_VERILOG_PATH=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/verilog -e MCW_ROOT=/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper -u $(id -u $USER):$(id -g $USER) efabless/dv:latest sh -c "source ~/.bashrc && cd /SSD2T/debug/d4_caravel_user_project/caravel_user_project/verilog/dv/la_test1 && export SIM=GL && make"
+iverilog -Ttyp -DFUNCTIONAL -DGL -DSIM -DUSE_POWER_PINS -DUNIT_DELAY=#1 \
+        -f/SSD2T/debug/d4_caravel_user_project/caravel_user_project/mgmt_core_wrapper/verilog/includes/includes.gl.caravel \
+        -f/SSD2T/debug/d4_caravel_user_project/caravel_user_project/verilog/includes/includes.gl.caravel_user_project -o la_test1.vvp la_test1_tb.v
+/SSD2T/debug/d4_caravel_user_project/caravel_user_project/caravel/verilog/gl/caravel.v:4988: warning: input port clock is coerced to inout.
+vvp  la_test1.vvp
