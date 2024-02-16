@@ -16,6 +16,7 @@ while (<FH>) {
  $line = $_;
 
  if( $line =~ /^[\s|\t]*input\s*([\d|\w]+)\s*([,|;])/) {
+   print "Org: $line";
    print "input wire $1"."$2\n";
    print "$1\n";
    print "$2\n";
